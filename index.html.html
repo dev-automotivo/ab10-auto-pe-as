@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB10 AUTO PEÇAS - Mais de 10 Mil Peças em Estoque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0D10',
+                            card: '#14181F',
+                            border: '#2A2F3A',
+                            red: '#E50914',
+                            redHover: '#C10710',
+                            silver: '#D1D5DB',
+                            silverLight: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0D10;
+            color: #F3F4F6;
+        }
+        .bg-grid {
+            background-image: radial-gradient(rgba(229, 9, 20, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-red-950 via-brand-red to-red-950 text-white text-xs sm:text-sm py-2 px-4 text-center font-semibold tracking-wide border-b border-red-800/50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <span class="flex items-center gap-2">
+                <span class="inline-block w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
+                Atendimento Rápido e Especializado para o Seu Veículo
+            </span>
+            <span class="hidden md:inline-block text-gray-200">
+                <i class="fa-solid fa-shield-halved mr-1 text-red-300"></i> Garantia de 3 Meses em Todas as Peças
+            </span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-gray-800 to-black border border-brand-border group-hover:border-brand-red transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-car-side text-2xl text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black tracking-wider text-white">
+                            AB<span class="text-brand-red">10</span>
+                        </span>
+                        <span class="text-[10px] font-bold tracking-widest text-gray-400 -mt-1 uppercase">
+                            Auto Peças
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Nav Links Desktop -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#solicitar" class="text-gray-300 hover:text-brand-red transition-colors">Solicitar Orçamento</a>
+                    <a href="#diferenciais" class="text-gray-300 hover:text-brand-red transition-colors">Diferenciais</a>
+                    <a href="#categorias" class="text-gray-300 hover:text-brand-red transition-colors">Categorias</a>
+                    <a href="#sobre" class="text-gray-300 hover:text-brand-red transition-colors">Quem Somos</a>
+                    <a href="#horario" class="text-gray-300 hover:text-brand-red transition-colors">Horários</a>
+                </nav>
+
+                <!-- WhatsApp Fast Action -->
+                <a href="#solicitar" class="hidden sm:flex items-center gap-2 bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-all shadow-lg shadow-brand-red/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Fazer Orçamento</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-grid">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-dark/80 to-brand-dark"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-card border border-brand-border text-xs sm:text-sm font-medium text-brand-silver mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-red"></span>
+                    Tradição, Qualidade e Variedade
+                </div>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6">
+                    A peça certa para o seu carro está na <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-brand-red">AB10 AUTO PEÇAS</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
+                    Atendimento ágil para encontrar a peça exata do seu veículo com total praticidade.
+                </p>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-16">
+                <div class="bg-brand-card/90 border border-brand-border rounded-xl p-6 text-center hover:border-brand-red/50 transition-all">
+                    <i class="fa-solid fa-boxes-stacked text-3xl text-brand-red mb-3"></i>
+                    <h3 class="text-2xl font-black text-white">+10 Mil</h3>
+                    <p class="text-sm text-gray-400 mt-1 font-medium">Peças em Estoque</p>
+                </div>
+
+                <div class="bg-brand-card/90 border border-brand-border rounded-xl p-6 text-center hover:border-brand-red/50 transition-all">
+                    <i class="fa-solid fa-award text-3xl text-brand-red mb-3"></i>
+                    <h3 class="text-2xl font-black text-white">+3 Anos</h3>
+                    <p class="text-sm text-gray-400 mt-1 font-medium">No Mercado Auto</p>
+                </div>
+
+                <div class="bg-brand-card/90 border border-brand-border rounded-xl p-6 text-center hover:border-brand-red/50 transition-all">
+                    <i class="fa-solid fa-shield-check text-3xl text-brand-red mb-3"></i>
+                    <h3 class="text-2xl font-black text-white">3 Meses</h3>
+                    <p class="text-sm text-gray-400 mt-1 font-medium">Garantia em Todas as Peças</p>
+                </div>
+            </div>
+
+            <!-- Main Interactive Quote Form -->
+            <div id="solicitar" class="max-w-3xl mx-auto bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-red text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
+                    Solicitação Rápida de Orçamento
+                </div>
+
+                <h2 class="text-xl sm:text-2xl font-bold text-white text-center mt-2 mb-2">
+                    Informe os dados do seu carro
+                </h2>
+                <p class="text-sm text-gray-400 text-center mb-8">
+                    Nossa equipe verifica a disponibilidade no estoque e retorna com o seu orçamento.
+                </p>
+
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Marca do Veículo</label>
+                            <input type="text" id="carBrand" required placeholder="Ex: Fiat, Chevrolet" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-red transition-colors text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Modelo do Carro</label>
+                            <input type="text" id="carModel" required placeholder="Ex: Uno, Onix, Civic" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-red transition-colors text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Ano do Carro</label>
+                            <input type="text" id="carYear" required placeholder="Ex: 2018, 2021" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-red transition-colors text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Peça(s) Que Você Precisa</label>
+                        <textarea id="carPart" required rows="3" placeholder="Ex: Kit de pastilhas de freio dianteiras e amortecedores traseiros" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-red transition-colors text-sm resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-3 text-base shadow-lg shadow-green-600/20">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Enviar Pedido de Orçamento no WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="diferenciais" class="py-16 bg-brand-card/50 border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-4xl font-black text-white mb-4">Como Trabalhamos</h2>
+                <p class="text-gray-400 text-sm sm:text-base">Processo simples e seguro para garantir que você receba a peça exata sem complicações.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-xl relative group hover:border-brand-red transition-all">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red text-brand-red rounded-lg flex items-center justify-center font-black text-xl mb-4">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Você Informa os Dados</h3>
+                    <p class="text-sm text-gray-400">Envie a marca, o modelo e o ano do seu carro juntamente com a peça desejada.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-xl relative group hover:border-brand-red transition-all">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red text-brand-red rounded-lg flex items-center justify-center font-black text-xl mb-4">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Consulta em Estoque</h3>
+                    <p class="text-sm text-gray-400">Verificamos instantaneamente a compatibilidade em nosso estoque com mais de 10 mil itens.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-xl relative group hover:border-brand-red transition-all">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red text-brand-red rounded-lg flex items-center justify-center font-black text-xl mb-4">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Orçamento + 3 Meses de Garantia</h3>
+                    <p class="text-sm text-gray-400">Você recebe o orçamento detalhado com a tranquilidade da nossa garantia de 90 dias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section id="categorias" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-4xl font-black text-white mb-4">Principais Linhas de Peças</h2>
+                <p class="text-gray-400 text-sm sm:text-base">Trabalhamos com componentes de alta qualidade para diversas marcas e modelos.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-brand-card border border-brand-border rounded-xl p-5 text-center hover:border-brand-red transition-all group">
+                    <i class="fa-solid fa-disc-drive text-3xl text-gray-400 group-hover:text-brand-red transition-colors mb-3"></i>
+                    <h4 class="text-sm font-bold text-white">Freios</h4>
+                    <p class="text-xs text-gray-500 mt-1">Pastilhas e Discos</p>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-5 text-center hover:border-brand-red transition-all group">
+                    <i class="fa-solid fa-car-tunnel text-3xl text-gray-400 group-hover:text-brand-red transition-colors mb-3"></i>
+                    <h4 class="text-sm font-bold text-white">Suspensão</h4>
+                    <p class="text-xs text-gray-500 mt-1">Amortecedores e Molas</p>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-5 text-center hover:border-brand-red transition-all group">
+                    <i class="fa-solid fa-gauge-high text-3xl text-gray-400 group-hover:text-brand-red transition-colors mb-3"></i>
+                    <h4 class="text-sm font-bold text-white">Motor</h4>
+                    <p class="text-xs text-gray-500 mt-1">Filtros e Correias</p>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-5 text-center hover:border-brand-red transition-all group">
+                    <i class="fa-solid fa-bolt text-3xl text-gray-400 group-hover:text-brand-red transition-colors mb-3"></i>
+                    <h4 class="text-sm font-bold text-white">Elétrica</h4>
+                    <p class="text-xs text-gray-500 mt-1">Faróis e Sensores</p>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-5 text-center hover:border-brand-red transition-all group">
+                    <i class="fa-solid fa-oil-can text-3xl text-gray-400 group-hover:text-brand-red transition-colors mb-3"></i>
+                    <h4 class="text-sm font-bold text-white">Óleos</h4>
+                    <p class="text-xs text-gray-500 mt-1">Lubrificantes e Fluidos</p>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-5 text-center hover:border-brand-red transition-all group">
+                    <i class="fa-solid fa-gears text-3xl text-gray-400 group-hover:text-brand-red transition-colors mb-3"></i>
+                    <h4 class="text-sm font-bold text-white">Transmissão</h4>
+                    <p class="text-xs text-gray-500 mt-1">Kits de Embreagem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-brand-card/30 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-brand-red font-bold text-sm uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-building"></i> Sobre a AB10 AUTO PEÇAS
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white mb-6">
+                        Tradição e Comprometimento no Mercado Automotivo
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed mb-4 text-sm sm:text-base">
+                        Com **mais de 3 anos de atuação no mercado**, a **AB10 AUTO PEÇAS** se consolidou como referência em fornecimento de peças automotivas, garantindo atendimento atencioso e produtos de altíssima confiabilidade.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed text-sm sm:text-base mb-6">
+                        Nosso catálogo conta com **mais de 10 mil itens em estoque** à pronta entrega. Todas as nossas vendas contam com **garantia total de 3 meses (90 dias)**.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 border-t border-brand-border pt-6">
+                        <div>
+                            <h4 class="text-white font-bold text-lg mb-1">+10.000</h4>
+                            <p class="text-xs text-gray-400">Itens em Estoque</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-lg mb-1">90 Dias</h4>
+                            <p class="text-xs text-gray-400">Garantia Máxima</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hours & Location Box -->
+                <div id="horario" class="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-clock text-brand-red"></i> Horário de Atendimento
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-brand-border/60 pb-3">
+                            <span class="text-sm font-medium text-gray-300">Segunda a Sexta-Feira</span>
+                            <span class="text-sm font-bold text-white bg-brand-dark px-3 py-1 rounded border border-brand-border">08:00 - 18:00</span>
+                        </div>
+
+                        <div class="flex justify-between items-center border-b border-brand-border/60 pb-3">
+                            <span class="text-sm font-medium text-gray-300">Sábado</span>
+                            <span class="text-sm font-bold text-white bg-brand-dark px-3 py-1 rounded border border-brand-border">08:00 - 12:00</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-gray-400">Domingos e Feriados</span>
+                            <span class="text-xs font-semibold text-gray-500 uppercase">Fechado</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-brand-border">
+                        <a href="#solicitar" class="w-full bg-brand-red hover:bg-brand-redHover text-white font-bold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-solid fa-headset"></i>
+                            Falar com um Atendente
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-brand-border py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl font-black text-white">AB<span class="text-brand-red">10</span> AUTO PEÇAS</span>
+                </div>
+                <p class="text-xs text-gray-500">
+                    &copy; AB10 AUTO PEÇAS. Todos os direitos reservados. Mais de 10 mil peças em estoque | 3 Meses de Garantia.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para envio direto para o WhatsApp -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            const brand = document.getElementById('carBrand').value.trim();
+            const model = document.getElementById('carModel').value.trim();
+            const year = document.getElementById('carYear').value.trim();
+            const part = document.getElementById('carPart').value.trim();
+
+            const text = `Olá, AB10 AUTO PEÇAS! Gostaria de solicitar um orçamento:\n\n` +
+                         `*Marca:* ${brand}\n` +
+                         `*Modelo:* ${model}\n` +
+                         `*Ano:* ${year}\n` +
+                         `*Peça(s) desejada(s):* ${part}\n\n` +
+                         `Poderiam verificar a disponibilidade no estoque e o valor?`;
+
+            const encodedText = encodeURIComponent(text);
+            // Insira o número do WhatsApp da loja abaixo no formato internacional (Ex: 5511999999999)
+            const phone = "5500000000000"; 
+
+            window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
+        }
+    </script>
+</body>
+</html>
