@@ -337,7 +337,7 @@
         </div>
     </footer>
 
-    <!-- Script para envio direto para o WhatsApp -->
+    <!-- Script para envio direto para o seu WhatsApp -->
     <script>
         function sendToWhatsApp(event) {
             event.preventDefault();
@@ -355,8 +355,8 @@
                          `Poderiam verificar a disponibilidade no estoque e o valor?`;
 
             const encodedText = encodeURIComponent(text);
-            // Insira o número do WhatsApp da loja abaixo no formato internacional (Ex: 5511999999999)
-            const phone = "5500000000000"; 
+            // Número do WhatsApp da AB10 Auto Peças configurado
+            const phone = "5541984631246"; 
 
             window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
         }
